@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Professional Portfolio to showcase my projects and content.">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to style sheet -->
+    <link rel="stylesheet" href="../Style Sheets/style.css">
+     <!-- Link to cool fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- Link to font awesome kit -->
+    <script src="https://kit.fontawesome.com/a673862905.js" crossorigin="anonymous"></script>
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+
+        <a href="#card-container-for-link" class="skip-nav-link">Skip Nav</a>
+
+        <p><a href="index.html">RL</a></p>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html" class="home-li-item">Home</a></li>
+                <li><a href="profile.html">Projects</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- For the mobile version of my webpage this section is for the hamburger menu that displays at a cetrain width of the screen -->
+        <label class="side-menu-toggle-body" onclick="openCloseSideMenu()">
+            <div>
+                <span class="toggle-span"></span>
+                <span class="toggle-span"></span>
+                <span class="toggle-span"></span>
+            </div>
+        </label>
+
+    <!-- begin styling the main section of the webpage -->
+    <main id="main">
+
+
+        <!-- Intro heading with my name for introduction only for a clean look -->
+        <h1 class="intro">Ryan Large</h1>
+
+        <!-- first section to display a couple cards and a paragraph explaining what I m about -->
+        <section class="section-one">
+
+            <p class="sec-1-p">These projects are my favorites for various reasons. The calulator was <a href="#" class="fancy-sec-1-p-link"><strong>the first real Javascript project that I ever completed.</strong></a> It was a great way to practice classes with JS and introduced many simple but essential techniques. The other card is a website project that incorporates media queries and a touch of javscript. Simple but beutiful. Check them out!</p>
+
+        
+            <!-- first card div -->
+            <div class="card-container" id="card-container-for-link">
+                <a href="#" class="card-link" aria-label="Responsive Website"><div class="card" id="card-one">
+
+                </div></a>
+                <div class="card-bg">
+                    <div class="banner"><p>1</p></div>
+                    <div class="languageIconContainer">
+                        <div class="languageIcons">
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-js-square"></i>
+                            <i class="fa-brands fa-php"></i>
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                    </div>
+                    <p class="card-p">Responive Website Design</p>
+                </div>
+            </div>
+
+            <!-- second card div -->
+            <div class="card-container">
+                <a href="#" class="card-link" aria-label="Calculator"><div class="card" id="card-two">
+
+                </div></a>
+                <div class="card-bg">
+                    <div class="banner"><p>2</p></div>
+                    <div class="languageIconContainer">
+                        <div class="languageIcons-2">
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-js-square"></i>
+                        </div>
+                    </div>
+                    <p class="card-p">HTLM, CSS, JS Calulator</p>
+                </div>
+            </div>
+
+        </section>
+
+           <!-- view more cards container for our cool letter aniations when clicked and on scroll -->
+        <figure class="view-more-container" onclick="viewMoreCards()">
+            <a href="#profile.html" class="view-more" aria-label="View All Projects" title="View All Projects">
+                <div>V</div>
+                <div>I</div>
+                <div>E</div>
+                <div>W</div>                
+                <div class="space">
+
+                </div>                
+                <div>M</div>                
+                <div>O</div>                
+                <div>R</div>                
+                <div>E</div>   
+            </a>             
+        </figure>
+        <button class="sec-1-btn" id="projects" tabindex="-1"><a href ="#card-container-for-link">Projects</a></button> 
+
+
+
+        <!-- section 2 for the education and training I have completed -->
+        <section class="section-2">
+
+                <h2 class="section-2-heading" id="tiles-for-link">
+                    This is where I have educated, this is where I have trained, these are the things I have accomplished on my journey, and this is where I plan to stay...
+                </h2>
+
+<!-- begin the section in section 2 that contains all of the tiles that showcase my training and education -->
+                <div class="tilelayout-container">
+
+                    <div class="tile-front-and-main-content">
+                        <h3 class="heading-4-for-tile-front">
+                            Code Wars
+                        </h3>
+                        <p class="paragraph-for-tile-front">
+                            8 hours a day, 7 days a week, 365 days a year
+                        </p>
+                        <div class="tile-bg-content">
+                            <button class="tile-bg-btn">View Stats</button>
+                        </div>
+                    </div>
+
+
+                    <div class="tile-front-and-main-content">
+                        <h3 class="heading-4-for-tile-front">
+                            Style Stage
+                        </h3>
+                        <p class="paragraph-for-tile-front">
+                            Assecibility practice is so important
+                        </p>
+                        <div class="tile-bg-content">
+                            <button class="tile-bg-btn">View Stats</button>
+                        </div>
+                    </div>
+
+
+                    <div class="tile-front-and-main-content">
+                        <h3 class="heading-4-for-tile-front">
+                            Frontend Mentor
+                        </h3>
+                        <p class="paragraph-for-tile-front">
+                            Not a problem started without finishing
+                        </p>
+                        <div class="tile-bg-content">
+                            <button class="tile-bg-btn">View Stats</button>
+                        </div>
+                    </div>
+
+
+                    <div class="tile-front-and-main-content">
+                        <h3 class="heading-4-for-tile-front">
+                            CSS Battle
+                        </h3>
+                        <p class="paragraph-for-tile-front">
+                            Talk about difficult. I love a challange
+                        </p>
+                        <div class="tile-bg-content">
+                            <button class="tile-bg-btn">View Stats</button>
+                        </div>
+                    </div>
+
+                    <div class="tile-front-and-main-content">
+                        <h3 class="heading-4-for-tile-front">
+                            Free Code Camp
+                        </h3>
+                        <p class="paragraph-for-tile-front">
+                            Full Stack Education
+                        </p>
+                        <div class="tile-bg-content">
+                            <button class="tile-bg-btn">View Stats</button>
+                        </div>
+                    </div>
+
+
+                    <div class="tile-front-and-main-content">
+                        <h3 class="heading-4-for-tile-front">
+                            SoloLearn
+                        </h3>
+                        <p class="paragraph-for-tile-front">
+                            JS, HTML, CSS, C++, Python, Kotlin, Etc....
+                        </p>
+                        <div class="tile-bg-content">
+                            <button class="tile-bg-btn">View Stats</button>
+                        </div>
+                    </div>
+
+
+                    <div class="tile-front-and-main-content">
+                        <h3 class="heading-4-for-tile-front">
+                            Mimo
+                        </h3>
+                        <p class="paragraph-for-tile-front">
+                            Fullstack Web Development, React, SQL, PHP
+                        </p>
+                        <div class="tile-bg-content">
+                            <button class="tile-bg-btn">View Stats</button>
+                        </div>
+                    </div>
+
+                    <div class="tile-front-and-main-content">
+                        <h3 class="heading-4-for-tile-front">
+                            Dev Mountain
+                        </h3>
+                        <p class="paragraph-for-tile-front">
+                            Completed bootcamp, full stack education
+                        </p>
+                        <div class="tile-bg-content">
+                            <button class="tile-bg-btn">View Stats</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+        </section>
+        <button class="sec-2-btn" id="education" tabindex="-2"><a href="#tiles-for-link">Education</a></button>
+
+
+
+        <!-- Section 3 layout and structure showing my goals and dreams and of course where I am heading -->
+        <section class="section-3" id="sec-3-for-link">
+            <div class="sec-3-container">
+                <h5>My Goals</h5>
+                <p>
+                    My goals are large, bright, realistic, and impossible <br> to accomplish without passion for what I love to do... <br>
+                    There are many, but I chose the most important ones to me to show you.
+                </p>
+
+                <div class="sec-3-card-container">
+                    <div class="goal-card">
+                        <i class="fa-brands fa-react"></i>
+                        <h6>React</h6>
+                        <p>Become the most efficient and comprehensive React/Redux Developer in the world</p>
+                    </div>
+                    <div class="goal-card">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <h6>Start a Business</h6>
+                        <p>Become my own boss running a tech company and working on software to build a better worl in tech</p>
+                    </div>
+                    <div class="goal-card">
+                        <i class="fa-brands fa-uncharted"></i>
+                        <h6>Software Engineering</h6>
+                        <p>Become a software engineer and introduce the world to a new era in robotics</p>
+                    </div>
+                    <div class="goal-card">
+                        <i class="fa-solid fa-terminal"></i>
+                        <h6>Forever Burning</h6>
+                        <p>Never allow the fire to die inside. Continue bettering my kowlegde everyday, and complete a full college degree in computer science and software engineering</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <button class="sec-3-btn" id="goals" tabindex="-2"><a href="#sec-3-for-link">Goals</a></button>
+
+
+        <section class="section-4">
+
+            <div class="heading-div">
+                <h6><u><strong>M</strong>y <strong>T</strong>op <strong>F</strong>ive <strong>S</strong>kills</u></h6>
+                <p>Fullstack Web Developer</p>
+            </div>
+
+            <div class="sec-4-container">
+
+
+                <div class="skill-container">
+                    <div class="skill">
+                        <div class="skill-num">1</div>
+                        <h6>HTML5</h6>
+                        <div class="skill-content">
+                            <i class="fa-brands fa-html5"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In itaque velit officia esse sapiente voluptas id magni, quidem culpa ad quo voluptatem natus voluptate accusamus, dolore numquam similique ullam quis?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-container">
+                    <div class="skill">
+                        <div class="skill-num">2</div>
+                        <h6>CSS/SCSS</h6>
+                        <div class="skill-content">
+                            <i class="fa-brands fa-sass"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ut, voluptatum ratione quibusdam sunt commodi reprehenderit voluptates, magni sit natus laborum minima quae eos enim vel, ipsum id a nobis?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-container">
+                    <div class="skill">
+                        <div class="skill-num">3</div>
+                        <h6>Javascript</h6>
+                        <div class="skill-content">
+                            <i class="fa-brands fa-js-square"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, minus sapiente. Debitis sunt explicabo magnam ipsum. Nam labore amet suscipit nobis facere minus libero distinctio, delectus, ab voluptate soluta dolorem?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-container">
+                    <div class="skill">
+                        <div class="skill-num">4</div>
+                        <h6>React & Node.js</h6>
+                        <div class="skill-content">
+                            <i class="fa-brands fa-react"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odit, iste aspernatur delectus praesentium nostrum beatae, excepturi sed cum eaque recusandae sunt. Nam, reprehenderit cumque distinctio dolores nihil cupiditate officia?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-container">
+                    <div class="skill">
+                        <div class="skill-num">5</div>
+                        <h6>Python</h6>
+                        <div class="skill-content">
+                            <i class="fa-brands fa-python"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, a cum! Iste consectetur totam rerum, commodi mollitia, ullam facere excepturi perferendis, itaque ratione quas alias fugiat recusandae. Doloribus, iste minima?</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+<!-- footer section -->
+    <footer class="footer">
+        <aside class="aside-menu"> 
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </aside>
+    </footer>
+
+    <!--Javascript link -->
+    <script src="../JavaScript/index.js"></script>
+</body>
+</html>
